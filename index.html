@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inés Barros Art | Creación en Texturas y Arte Abstracto</title>
+    <meta name="description"
+        content="Obras y talleres creativos de arte abstracto y texturas. Crea tus propias obras de arte inspiradas en la naturaleza, el océano y la tierra.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="loader" class="loader">
+        <div class="spinner"></div>
+    </div>
+
+    <nav class="navbar" id="navbar">
+        <div class="logo">INES BARROS</div>
+        <ul class="nav-links">
+            <li><a href="#about">Sobre Mí</a></li>
+            <li><a href="#colecciones">Obras</a></li>
+            <li><a href="#workshops">Talleres</a></li>
+            <li><a href="#eventos">Eventos</a></li>
+            <li><a href="#kit">Kit de Texturas</a></li>
+        </ul>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+    <header class="hero" id="home">
+        <div class="hero-content">
+            <h1 class="hero-title fade-in-up">"El arte empieza cuando lo intentas"</h1>
+            <p class="hero-subtitle fade-in-up delay-1">Texturas, relieves y experiencias creativas. Obras originales de
+                arte abstracto y talleres en Madrid.</p>
+            <div class="hero-buttons fade-in-up delay-2">
+                <a href="#colecciones" class="btn btn-primary">Ver Obras</a>
+                <a href="#workshops" class="btn btn-outline">Reserva Taller</a>
+            </div>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="scroll-indicator fade-in-up delay-3">
+            <span>Explorar</span>
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- ABOUT -->
+        <section id="about" class="section fade-in-up">
+            <div class="container about-container">
+                <div class="about-text">
+                    <h2>Dejarse Llevar por el Material</h2>
+                    <p>¡Hola! Soy Inés Barros, artista visual especializada en arte abstracto. Mi misión es simple:
+                        ayudarte a descubrir que el arte no depende de la técnica, sino de la valentía de crear.</p>
+                    <p>A través de mis talleres y colecciones, te ofrezco un espacio para desconectar. Un lugar donde lo
+                        táctil, los relieves y los tonos serenos te permiten transformar una pared en horizonte.</p>
+                </div>
+                <!-- Aquí podemos dejar art_details o usar la de Tierra Firme para que sea real -->
+                <div class="about-image">
+                    <img src="assets/IBV.JPG" alt="Inés Barros">
+                </div>
+            </div>
+        </section>
+
+        <!-- COLLECTIONS -->
+        <section id="colecciones" class="section fade-in-up">
+            <div class="container">
+                <div class="section-header container-center mb-large">
+                    <h2>Colecciones</h2>
+                    <p>Cada obra está pensada como una ventana hacia un paisaje íntimo. Explora mis obras disponibles o
+                        solicita una pieza personalizada para tu espacio.</p>
+                </div>
+
+                <!-- Personalizadas -->
+                <div class="collection-block">
+                    <div class="collection-info">
+                        <h3>Obras Personalizadas</h3>
+                        <p>Grandes formatos por encargo. Un viaje entre texturas inspiradas en el océano, la arcilla y
+                            el viento. Cada pieza se adapta a tus medidas.</p>
+                        <p style="font-size: 0.9rem; margin-top: 15px;">Colecciones "Océano" y "Arenas de Sal".</p>
+                    </div>
+                    <div class="carousel-container">
+                        <button class="carousel-btn carousel-prev" onclick="scrollCarousel(-1)">&#10094;</button>
+                        <div class="carousel-track" id="obras-carousel">
+                            <div class="gallery-item carousel-item"
+                                onclick="openModal('Atardecer', 'assets/Atardecer.JPG', 'Colección Arenas de Sal', 'Medidas: 80 x 60 cm. Precio: 130 €')">
+                                <img src="assets/Atardecer.JPG" alt="Atardecer">
+                                <div class="gallery-overlay">
+                                    <h4>Atardecer</h4>
+                                </div>
+                            </div>
+                            <div class="gallery-item carousel-item"
+                                onclick="openModal('Bahía de Cádiz', 'assets/Bahía de Cadiz.JPG', 'Personalizada', 'Díptico inspirado en el mar y la tierra. Medidas a pedido (Precio catálogo)')">
+                                <img src="assets/Bahi%CC%81a%20de%20Cadiz.JPG" alt="Bahía de Cádiz">
+                                <div class="gallery-overlay">
+                                    <h4>Bahía de Cádiz</h4>
+                                </div>
+                            </div>
+                            <div class="gallery-item carousel-item"
+                                onclick="openModal('Tierra Firme', 'assets/Tierra%20firme.JPG', 'Colección Océano', 'Tonos arenas y arcilla. Medidas a pedido (Precio catálogo)')">
+                                <img src="assets/Tierra%20firme.JPG" alt="Tierra Firme">
+                                <div class="gallery-overlay">
+                                    <h4>Tierra Firme</h4>
+                                </div>
+                            </div>
+                            <div class="gallery-item carousel-item"
+                                onclick="openModal('Soltar', 'assets/Soltar.JPG', 'Colección Océano', 'Océano y arena en texturas de gran formato. Medidas a pedido (Precio catálogo)')">
+                                <img src="assets/Soltar.JPG" alt="Soltar" style="object-position: top;">
+                                <div class="gallery-overlay">
+                                    <h4>Soltar</h4>
+                                </div>
+                            </div>
+                            <div class="gallery-item carousel-item"
+                                onclick="openModal('Suspiro de Otoño', 'assets/Suspiro de Otoño.JPG', 'Colección Arenas de Sal', 'Medidas a pedido | Precio catálogo')">
+                                <img src="assets/Suspiro de Otoño.JPG" alt="Suspiro de Otoño">
+                                <div class="gallery-overlay">
+                                    <h4>Suspiro de Otoño</h4>
+                                </div>
+                            </div>
+                            <div class="gallery-item carousel-item"
+                                onclick="openModal('Arenas de Sal', 'assets/Arenas%20de%20Sal.JPG', 'Colección Océano', 'Obras con relieves y tierras naturales. Medidas a pedido')">
+                                <img src="assets/Arenas%20de%20Sal.JPG" alt="Arenas de Sal">
+                                <div class="gallery-overlay">
+                                    <h4>Arenas de Sal</h4>
+                                </div>
+                            </div>
+                            <div class="gallery-item carousel-item"
+                                onclick="openModal('Profundidad', 'assets/Profundidad.JPG', 'Colección Océano', 'Obras de textura y profundidad azul. Medidas a pedido')">
+                                <img src="assets/Profundidad.JPG" alt="Profundidad">
+                                <div class="gallery-overlay">
+                                    <h4>Profundidad</h4>
+                                </div>
+                            </div>
+                            <div class="gallery-item carousel-item"
+                                onclick="openModal('Mareas', 'assets/Mareas.jpeg', 'Colección Océano', 'Formas orgánicas inspiradas en el oleaje. Medidas a pedido')">
+                                <img src="assets/Mareas.jpeg" alt="Mareas">
+                                <div class="gallery-overlay">
+                                    <h4>Mareas</h4>
+                                </div>
+                            </div>
+                            <div class="gallery-item carousel-item"
+                                onclick="openModal('Brisa', 'assets/Brisa.JPG', 'Colección Arenas de Sal', 'Texturas suaves como la brisa del mar. Medidas a pedido')">
+                                <img src="assets/Brisa.JPG" alt="Brisa">
+                                <div class="gallery-overlay">
+                                    <h4>Brisa</h4>
+                                </div>
+                            </div>
+                            <div class="gallery-item carousel-item"
+                                onclick="openModal('Baile de Mareas', 'assets/Baile%20de%20Mareas.JPG', 'Colección Arenas de Sal', 'Composición dinámica y equilibrada. Medidas a pedido')">
+                                <img src="assets/Baile%20de%20Mareas.JPG" alt="Baile de Mareas">
+                                <div class="gallery-overlay">
+                                    <h4>Baile de Mareas</h4>
+                                </div>
+                            </div>
+                            <div class="gallery-item carousel-item"
+                                onclick="openModal('Reflejos de Sal', 'assets/Reflejos%20de%20Sal.JPG', 'Colección Arenas de Sal', 'Tonos blanquecinos y ocres muy sutiles. Medidas a pedido')">
+                                <img src="assets/Reflejos%20de%20Sal.JPG" alt="Reflejos de Sal">
+                                <div class="gallery-overlay">
+                                    <h4>Reflejos de Sal</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-btn carousel-next" onclick="scrollCarousel(1)">&#10095;</button>
+                    </div>
+                </div>
+
+                <!-- Minis -->
+                <div class="collection-block mt-large">
+                    <div class="collection-info">
+                        <h3>Obras Minis</h3>
+                        <p>Formatos pequeños (aprox. 27x23 cm) ideales para crear composiciones de "Dúo Minis". Tonos
+                            inspirados en la calma del mar y la arena.</p>
+                    </div>
+                    <div class="gallery-grid-small">
+                        <div class="gallery-item"
+                            onclick="openModal('Horizonte de Sal', 'assets/Horizonte%20de%20Sal.JPG', 'Obra Mini', '28 x 24 x 4,5 cm | Precio: 65 €')">
+                            <img src="assets/Horizonte%20de%20Sal.JPG" alt="Horizonte de Sal">
+                            <div class="gallery-overlay">
+                                <h4>Horizonte de Sal</h4>
+                            </div>
+                        </div>
+                        <div class="gallery-item"
+                            onclick="openModal('Oleaje', 'assets/Oleaje.jpeg', 'Obra Mini', '27 x 21 x 4 cm | Precio: 65 €')">
+                            <img src="assets/Oleaje.jpeg" alt="Oleaje">
+                            <div class="gallery-overlay">
+                                <h4>Oleaje</h4>
+                            </div>
+                        </div>
+                        <div class="gallery-item"
+                            onclick="openModal('Profundidad', 'assets/Profundidad%20mini.JPG', 'Obra Mini', '27 x 23 x 4 cm | Precio: 65 €')">
+                            <img src="assets/Profundidad%20mini.JPG" alt="Profundidad">
+                            <div class="gallery-overlay">
+                                <h4>Profundidad</h4>
+                            </div>
+                        </div>
+                        <div class="gallery-item"
+                            onclick="openModal('Mareas', 'assets/Mareas%20mini.JPG', 'Obra Mini', '33 x 23 x 4,5 cm | Precio: 69 €')">
+                            <img src="assets/Mareas%20mini.JPG" alt="Mareas">
+                            <div class="gallery-overlay">
+                                <h4>Mareas</h4>
+                            </div>
+                        </div>
+                        <div class="gallery-item"
+                            onclick="openModal('Reflejos de Calma', 'assets/Reflejos%20de%20Calma.JPG', 'Obra Mini', '27,5 x 23 x 4,5 cm | Precio: 65 €')">
+                            <img src="assets/Reflejos%20de%20Calma.JPG" alt="Reflejos de Calma">
+                            <div class="gallery-overlay">
+                                <h4>Reflejos de Calma</h4>
+                            </div>
+                        </div>
+                        <div class="gallery-item"
+                            onclick="openModal('Atardecer', 'assets/Atardecer%20mini.JPG', 'Obra Mini', '27,5 x 23 x 4,5 cm | Precio: 65 €')">
+                            <img src="assets/Atardecer%20mini.JPG" alt="Atardecer">
+                            <div class="gallery-overlay">
+                                <h4>Atardecer</h4>
+                            </div>
+                        </div>
+                        <div class="gallery-item"
+                            onclick="openModal('Dúo Minis', 'assets/Dúo%20Minis2.jpeg', 'Dúo Minis', 'Dúo Minis (Combinadas): 119 €')">
+                            <img src="assets/Dúo%20Minis2.jpeg" alt="Dúo Minis">
+                            <div class="gallery-overlay">
+                                <h4>Dúo Minis</h4>
+                            </div>
+                        </div>
+                        <div class="gallery-item"
+                            onclick="openModal('Dúo Minis', 'assets/Dúo%20Minis4.JPG', 'Dúo Minis', 'Dúo Minis (Combinadas): 119 €')">
+                            <img src="assets/Dúo%20Minis4.JPG" alt="Dúo Minis">
+                            <div class="gallery-overlay">
+                                <h4>Dúo Minis</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- WORKSHOPS -->
+        <section id="workshops" class="section fade-in-up">
+            <div class="container about-container reverse">
+                <div class="about-text">
+                    <h2>¡Conviértete en Artista!</h2>
+                    <p>Un taller para divertirse, crear y explorar. No necesitas experiencia: aprenderás técnicas de
+                        pintura y texturizado para llevarte a casa tus propias obras en lienzo con acrílico y minerales.
+                    </p>
+                    <ul class="workshop-list">
+                        <li>✔️ Taller de 3 horas en espacio íntimo en Madrid.</li>
+                        <li>✔️ Te llevas 2 obras en lienzo a casa.</li>
+                        <li>✔️ Aperitivo y copa de vino incluidos.</li>
+                        <li>✔️ Guía de materiales y comunidad de artistas.</li>
+                    </ul>
+                    <br>
+                    <a href="https://wa.me/34616679621" target="_blank" class="btn btn-primary"
+                        style="background-color:var(--bg-color); color:var(--text-primary); margin-top: 10px;">¡Reserva
+                        tu plaza! (70€)</a>
+                </div>
+                <div class="about-image">
+                    <img src="assets/Talleres.jpg" alt="Taller de arte y vino">
+                </div>
+            </div>
+        </section>
+
+        <!-- EVENTOS -->
+        <section id="eventos" class="section fade-in-up">
+            <div class="container about-container">
+                <div class="about-text">
+                    <h2>Eventos y Team Building</h2>
+                    <p>Celebra de una manera diferente. Diseñamos una experiencia creativa a medida para tu equipo de
+                        trabajo (Team Building), cumpleaños o eventos privados.</p>
+                    <ul class="workshop-list">
+                        <li>✔️ Presupuestos personalizados para grupos.</li>
+                        <li>✔️ Sesiones de pintura y texturas guiadas.</li>
+                        <li>✔️ Opción de catering y cata de vinos.</li>
+                        <li>✔️ Nos desplazamos a tu espacio o te recibimos en el nuestro.</li>
+                    </ul>
+                    <br>
+                    <a href="https://wa.me/34616679621" target="_blank" class="btn btn-outline"
+                        style="margin-top: 10px;">Solicitar Presupuesto</a>
+                </div>
+                <div class="about-image" style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                    <img src="assets/Eventos.JPG" alt="Eventos y Team Building"
+                        style="border-radius: 4px; box-shadow: 0 20px 40px rgba(0,0,0,0.1); object-fit: cover; height: 100%;">
+                    <img src="assets/Eventos%202.JPG" alt="Eventos y Team Building"
+                        style="border-radius: 4px; box-shadow: 0 20px 40px rgba(0,0,0,0.1); object-fit: cover; height: 100%;">
+                </div>
+            </div>
+        </section>
+
+        <!-- KIT -->
+        <section id="kit" class="section fade-in-up">
+            <div class="container about-container">
+                <div class="about-text">
+                    <h2>Kit de Texturas Art To-Go</h2>
+                    <p>¿Quieres crear tu propia obra y enmarcarla en casa? Este kit tiene todo lo que necesitas con la
+                        paleta de colores lista para ti.</p>
+                    <div class="kit-details"
+                        style="font-size: 0.95rem; opacity: 0.8; margin-top: 15px; margin-bottom: 25px;">
+                        <p>Bote de Gesso • Minerales para textura • Espátula, 2 brochas, esponja • Marco efecto
+                            roble/abedul
+                            (15x18cm) • Paleta de acrílicos (tonos morados/azul y dorado) • Guía online QR.</p>
+                    </div>
+                    <div class="btn-group">
+                        <a href="https://wa.me/34616679621" target="_blank" class="btn btn-outline">Comprar Kit
+                            (55€)</a>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="assets/Kit.jpg" alt="Kit de Texturas Art To-Go">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal para las Obras (Popup) -->
+    <div id="artModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <div class="modal-body">
+                <div class="modal-img-container">
+                    <img id="modal-img" src="" alt="Obra en detalle">
+                </div>
+                <div class="modal-info">
+                    <h4 id="modal-col"
+                        style="color:var(--accent-color); text-transform:uppercase; font-size:0.8rem; letter-spacing:2px; margin-bottom:10px;">
+                        Colección</h4>
+                    <h2 id="modal-title"
+                        style="font-family:var(--font-heading); font-size:2.5rem; margin-bottom:15px; color:var(--text-primary);">
+                        Título</h2>
+                    <p id="modal-desc" style="color:var(--text-secondary); margin-bottom:30px;">Descripción de la obra.
+                    </p>
+                    <a href="https://wa.me/34616679621" target="_blank" class="btn btn-primary w-full">Me interesa</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <h2>INES BARROS</h2>
+                <p>El arte empieza cuando lo intentas.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Contacto</h3>
+                <a href="https://www.instagram.com/inesbarros.art" target="_blank" class="social-link">Instagram:
+                    @inesbarros.art</a>
+                <a href="https://wa.me/34616679621" target="_blank" class="social-link">WhatsApp: +34 616 679 621</a>
+                <a href="mailto:inesbarrosvazquez@gmail.com" class="social-link">Email: inesbarrosvazquez@gmail.com</a>
+                <a href="https://www.linkedin.com/in/inesbarrosvazquez/" target="_blank" class="social-link">LinkedIn:
+                    Inés Barros Vázquez</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Inés Barros Art. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
