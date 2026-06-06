@@ -248,39 +248,22 @@ ul { list-style: none; }
 }
 /* ── Galería de vídeos ── */
 .video-gallery {
-  max-width: 800px;
-  margin: 2rem auto;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  padding: 0 1rem;
-}
-
-.video-main video {
-  width: 100%;
-  max-height: 450px;
-  object-fit: cover;
-  border-radius: 12px;
-  display: block;
-}
-
-.video-thumbs {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
+  width: 100%;
+  margin: 2rem 0;
 }
 
-.video-thumbs video {
+.video-gallery video {
   width: 100%;
-  max-height: 220px;
-  object-fit: cover;
   border-radius: 12px;
   display: block;
 }
 
-/* Móvil */
+/* Móvil: apilados */
 @media (max-width: 600px) {
-  .video-thumbs {
+  .video-gallery {
     grid-template-columns: 1fr;
   }
 }
