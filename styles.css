@@ -251,9 +251,10 @@ ul { list-style: none; }
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
-  width: 100%;
+  width: calc(100% - 4rem);
+  max-width: 1200px;
   margin: 2rem auto;
-  padding: 0 2rem;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -268,6 +269,6 @@ ul { list-style: none; }
 @media (max-width: 600px) {
   .video-gallery {
     grid-template-columns: 1fr;
-    padding: 0 1rem;
+    width: calc(100% - 2rem);
   }
 }
