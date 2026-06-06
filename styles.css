@@ -252,8 +252,7 @@ ul { list-style: none; }
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
   width: 100%;
-  max-width: 100%;
-  margin: 2rem 0;
+  margin: 2rem auto;
   padding: 0 2rem;
   box-sizing: border-box;
 }
@@ -266,9 +265,9 @@ ul { list-style: none; }
   display: block;
 }
 
-/* Móvil: apilados */
 @media (max-width: 600px) {
   .video-gallery {
     grid-template-columns: 1fr;
+    padding: 0 1rem;
   }
 }
