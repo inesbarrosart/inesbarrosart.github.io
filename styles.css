@@ -272,3 +272,10 @@ ul { list-style: none; }
     width: calc(100% - 2rem);
   }
 }
+#workshops {
+  display: block !important;
+}
+
+#workshops .about-container {
+  display: block !important;
+}
