@@ -395,13 +395,25 @@ ul { list-style: none; }
 }
 <img src="assets/ibv.jpg" alt="Inés Barros" style="width: 350px; max-height: 400px; object-fit: cover; border-radius: 8px; display: block; margin: 0 auto;">
 #about {
-  padding-top: 0rem;
+  padding-top: 2rem;
   padding-bottom: 0rem;
 }
 #about.section {
-  padding-top: 3rem;
+  padding-top: 2rem;
   padding-bottom: 0;
 }
 #colecciones.section {
   padding-top: 2rem;
+}
+#workshops.section {
+  padding-top: 2rem;
+  padding-bottom: 0;
+}
+#eventos.section {
+  padding-top: 2rem;
+  padding-bottom: 0;
+}
+#kit.section {
+  padding-top: 2rem;
+  padding-bottom: 0;
 }
