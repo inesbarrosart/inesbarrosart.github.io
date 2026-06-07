@@ -398,3 +398,7 @@ ul { list-style: none; }
   padding-top: 0rem;
   padding-bottom: 0rem;
 }
+#about.section {
+  padding-top: 0;
+  padding-bottom: 0;
+}
