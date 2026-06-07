@@ -338,3 +338,30 @@ ul { list-style: none; }
 }
 
 .eventos-dots .dot.active { background: white; }
+/* ── Centrar títulos y botones en secciones ── */
+#workshops .about-text,
+#eventos .about-text,
+#kit .about-text {
+  text-align: center;
+}
+
+#workshops .about-text h2,
+#eventos .about-text h2,
+#kit .about-text h2 {
+  text-align: center;
+}
+
+#workshops .about-text .btn,
+#eventos .about-text .btn,
+#kit .about-text .btn {
+  display: block;
+  margin: 0 auto;
+  max-width: 300px;
+}
+
+#workshops .workshop-list,
+#eventos .workshop-list,
+#kit .workshop-list {
+  text-align: left;
+  margin: 15px auto 25px auto;
+}
