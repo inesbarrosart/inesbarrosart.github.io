@@ -108,3 +108,33 @@ function scrollCarousel(btn, direction) {
         }
     }
 }
+// Carrusel Eventos
+let eventoIndex = 0;
+
+function moverEventos(dir) {
+  const track = document.getElementById('eventos-track');
+  const imgs = track.querySelectorAll('img');
+  eventoIndex = (eventoIndex + dir + imgs.length) % imgs.length;
+  track.style.transform = `translateX(-${eventoIndex * 100}%)`;
+  actualizarDots();
+}
+
+function actualizarDots() {
+  document.querySelectorAll('#eventos-dots .dot').forEach((d, i) => {
+    d.classList.toggle('active', i === eventoIndex);
+  });
+}
+
+// Crear dots automáticamente
+window.addEventListener('load', () => {
+  const track = document.getElementById('eventos-track');
+  if (!track) return;
+  const imgs = track.querySelectorAll('img');
+  const dotsContainer = document.getElementById('eventos-dots');
+  imgs.forEach((_, i) => {
+    const dot = document.createElement('div');
+    dot.className = 'dot' + (i === 0 ? ' active' : '');
+    dot.onclick = () => { eventoIndex = i; track.style.transform = `translateX(-${i * 100}%)`; actualizarDots(); };
+    dotsContainer.appendChild(dot);
+  });
+});
