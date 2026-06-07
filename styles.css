@@ -365,3 +365,31 @@ ul { list-style: none; }
   text-align: left;
   margin: 15px auto 25px auto;
 }
+#kit .about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#kit .about-text {
+  text-align: center;
+  width: 100%;
+}
+
+#kit .about-text h2 {
+  text-align: center;
+}
+
+#kit .about-text .btn {
+  display: block;
+  margin: 0 auto;
+  max-width: 300px;
+}
+
+#kit .about-image img {
+  max-width: 300px;
+  border-radius: 12px;
+  display: block;
+  margin: 0 auto;
+}
