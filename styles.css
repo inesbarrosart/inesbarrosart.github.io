@@ -402,3 +402,6 @@ ul { list-style: none; }
   padding-top: 3rem;
   padding-bottom: 0;
 }
+#colecciones.section {
+  padding-top: 0.5rem;
+}
