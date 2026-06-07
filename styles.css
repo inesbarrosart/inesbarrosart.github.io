@@ -285,6 +285,7 @@ ul { list-style: none; }
   width: 100%;
   overflow: hidden;
   border-radius: 12px;
+  margin-top: 2rem;
 }
 
 .eventos-track {
