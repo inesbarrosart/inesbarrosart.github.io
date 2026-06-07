@@ -395,6 +395,6 @@ ul { list-style: none; }
 }
 <img src="assets/ibv.jpg" alt="Inés Barros" style="width: 350px; max-height: 400px; object-fit: cover; border-radius: 8px; display: block; margin: 0 auto;">
 #about {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-top: 0rem;
+  padding-bottom: 0rem;
 }
