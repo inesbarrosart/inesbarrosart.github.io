@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | Inés Barros Art</title>
+  <meta name="description" content="Contacta con Inés Barros para reservar un taller, encargar una obra o diseñar una experiencia para tu empresa. Madrid y Barcelona.">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="loader" id="loader"><div class="spinner"></div></div>
+
+  <nav class="navbar" id="navbar">
+    <a href="index.html" class="logo">Inés Barros</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="artista.html" onclick="closeMenu()">La Artista</a></li>
+      <li><a href="experiencias.html" onclick="closeMenu()">Experiencias</a></li>
+      <li><a href="colecciones.html" onclick="closeMenu()">Colecciones</a></li>
+      <li><a href="kit.html" onclick="closeMenu()">Art To-Go</a></li>
+      <li><a href="contacto.html" onclick="closeMenu()" class="nav-active">Contacto</a></li>
+    </ul>
+    <div class="menu-toggle" id="menuToggle" onclick="toggleMenu()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+  </nav>
+
+  <main class="page-main">
+
+    <section class="page-hero">
+      <div class="container container-center">
+        <p class="eyebrow">Contacto</p>
+        <h1>¿Hablamos?</h1>
+        <p>Tanto si quieres reservar una plaza en un taller, encargar una obra o simplemente tienes una pregunta, estoy aquí.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contacto-grid">
+
+        <!-- FORMULARIO -->
+        <div class="contacto-form-wrapper">
+          <h2>Envíame un mensaje</h2>
+          <form class="contacto-form" action="https://formspree.io/f/xdavwyrd" method="POST">
+            <div class="form-group">
+              <label for="nombre">Nombre *</label>
+              <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email *</label>
+              <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+            </div>
+            <div class="form-group">
+              <label for="telefono">Teléfono (opcional)</label>
+              <input type="tel" id="telefono" name="telefono" placeholder="+34 600 000 000">
+            </div>
+            <div class="form-group">
+              <label for="asunto">¿En qué puedo ayudarte?</label>
+              <select id="asunto" name="asunto">
+                <option value="">Selecciona una opción</option>
+                <option value="taller">Reservar plaza en un taller</option>
+                <option value="empresas">Taller para mi empresa</option>
+                <option value="obra">Encargar una obra</option>
+                <option value="kit">Kit Art To-Go</option>
+                <option value="otro">Otra consulta</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="mensaje">Mensaje *</label>
+              <textarea id="mensaje" name="mensaje" rows="5" placeholder="Cuéntame qué necesitas..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-full">Enviar Mensaje</button>
+          </form>
+        </div>
+
+        <!-- CONTACTO DIRECTO -->
+        <div class="contacto-info">
+          <h2>Contacto directo</h2>
+          <p style="color:var(--text-secondary);margin-bottom:32px">Si lo prefieres, también puedes contactarme directamente por cualquiera de estos canales.</p>
+
+          <div class="contacto-cards">
+            <a href="mailto:ibarros.art@gmail.com" class="contacto-card">
+              <div class="contacto-card-icon">✉️</div>
+              <div>
+                <div class="contacto-card-label">Email</div>
+                <div class="contacto-card-value">ibarros.art@gmail.com</div>
+              </div>
+            </a>
+            <a href="tel:+34616679621" class="contacto-card">
+              <div class="contacto-card-icon">📞</div>
+              <div>
+                <div class="contacto-card-label">Teléfono</div>
+                <div class="contacto-card-value">+34 616 679 621</div>
+              </div>
+            </a>
+            <a href="https://wa.me/34616679621" target="_blank" class="contacto-card">
+              <div class="contacto-card-icon">💬</div>
+              <div>
+                <div class="contacto-card-label">WhatsApp</div>
+                <div class="contacto-card-value">+34 616 679 621</div>
+              </div>
+            </a>
+            <a href="https://www.instagram.com/inesbarros.art" target="_blank" class="contacto-card">
+              <div class="contacto-card-icon">📸</div>
+              <div>
+                <div class="contacto-card-label">Instagram</div>
+                <div class="contacto-card-value">@inesbarros.art</div>
+              </div>
+            </a>
+          </div>
+
+          <div class="contacto-ubicacion">
+            <p class="eyebrow" style="margin-top:40px">Dónde estamos</p>
+            <p style="color:var(--text-secondary)">Talleres presenciales en <strong>Madrid</strong> y <strong>Barcelona</strong>.<br>Webinars y talleres online para toda España.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <h2>Inés Barros</h2>
+        <p>"El arte empieza cuando lo intentas"</p>
+      </div>
+      <div class="footer-links">
+        <h3>Navegación</h3>
+        <a href="artista.html" class="social-link">La Artista</a>
+        <a href="experiencias.html" class="social-link">Experiencias</a>
+        <a href="colecciones.html" class="social-link">Colecciones</a>
+        <a href="empresas.html" class="social-link">Para Empresas</a>
+        <a href="kit.html" class="social-link">Art To-Go</a>
+      </div>
+      <div class="footer-links">
+        <h3>Contacto</h3>
+        <a href="https://www.instagram.com/inesbarros.art" class="social-link" target="_blank">Instagram</a>
+        <a href="https://wa.me/34616679621" class="social-link" target="_blank">WhatsApp</a>
+        <a href="mailto:ibarros.art@gmail.com" class="social-link">Email</a>
+        <a href="https://www.linkedin.com/in/inesbarrosvazquez/" class="social-link" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Inés Barros Art. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
