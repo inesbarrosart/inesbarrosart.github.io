@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Talleres Corporativos y Team Building | Inés Barros Art — Madrid y Barcelona</title>
+  <meta name="description" content="Team building artístico, talleres corporativos y eventos de empresa en Madrid y Barcelona. Experiencias creativas a medida para equipos de cualquier tamaño. También online.">
+  <meta name="keywords" content="team building artístico Madrid, team building Barcelona, talleres corporativos Madrid, actividades de empresa Madrid, eventos corporativos creativos, taller de arte para empresas">
+  <meta name="author" content="Inés Barros">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="loader" id="loader"><div class="spinner"></div></div>
+
+  <nav class="navbar" id="navbar">
+    <a href="index.html" class="logo">Inés Barros</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="artista.html" onclick="closeMenu()">La Artista</a></li>
+      <li><a href="experiencias.html" onclick="closeMenu()">Experiencias</a></li>
+      <li><a href="colecciones.html" onclick="closeMenu()">Colecciones</a></li>
+      <li><a href="kit.html" onclick="closeMenu()">Art To-Go</a></li>
+      <li><a href="contacto.html" onclick="closeMenu()">Contacto</a></li>
+    </ul>
+    <div class="menu-toggle" id="menuToggle" onclick="toggleMenu()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- HERO -->
+    <header class="page-hero-img" style="background: url('assets/eventos1.jpg') center/cover no-repeat;">
+      <div class="hero-overlay"></div>
+      <div class="hero-content fade-in-up">
+        <p class="eyebrow">Para Empresas</p>
+        <h1>"La creatividad es la mejor<br>inversión en tu equipo"</h1>
+        <p>Experiencias artísticas únicas para empresas que entienden que un equipo conectado rinde mejor. Madrid y Barcelona — también online.</p>
+        <div class="hero-buttons">
+          <a href="contacto.html" class="btn btn-primary">Solicitar Presupuesto</a>
+          <a href="#como-funciona" class="btn btn-outline">Cómo Funciona</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- FRANJA DE CONFIANZA -->
+    <section class="trust-bar">
+      <div class="trust-items">
+        <div class="trust-item"><span>📍</span><span>Madrid y Barcelona</span></div>
+        <div class="trust-divider"></div>
+        <div class="trust-item"><span>👥</span><span>Grupos reducidos y personalizados</span></div>
+        <div class="trust-divider"></div>
+        <div class="trust-item"><span>💻</span><span>También online</span></div>
+        <div class="trust-divider"></div>
+        <div class="trust-item"><span>✨</span><span>Cada taller, una experiencia única</span></div>
+      </div>
+    </section>
+
+    <!-- QUÉ OFRECEMOS -->
+    <section class="section fade-in-up">
+      <div class="container">
+        <div class="section-header container-center mb-large">
+          <p class="eyebrow">Qué Ofrecemos</p>
+          <h2>Experiencias a medida<br>para tu equipo</h2>
+          <p>Cada empresa es diferente. Por eso diseñamos cada taller desde cero: adaptamos el formato, los materiales, la duración y la dinámica a vuestras necesidades.</p>
+        </div>
+        <div class="servicios-grid">
+          <div class="servicio-card">
+            <div class="servicio-icon">🎨</div>
+            <h3>Team Building Artístico</h3>
+            <p>Taller de textura y acrílico guiado por Inés. Sin experiencia previa. Cada persona crea su propia obra y se la lleva a casa como recuerdo de la experiencia compartida.</p>
+          </div>
+          <div class="servicio-card">
+            <div class="servicio-icon">🥂</div>
+            <h3>Eventos Corporativos</h3>
+            <p>Celebraciones de empresa, jornadas de innovación o cenas con arte. Combinamos la experiencia creativa con vino y gastronomía premium para crear un momento especial.</p>
+          </div>
+          <div class="servicio-card">
+            <div class="servicio-icon">💻</div>
+            <h3>Webinars Online</h3>
+            <p>Para equipos en remoto o distribuidos entre ciudades. Enviamos el Kit Art To-Go a cada empleado antes de la sesión y guiamos el taller en directo.</p>
+          </div>
+          <div class="servicio-card">
+            <div class="servicio-icon">🧘</div>
+            <h3>Bienestar y Desconexión</h3>
+            <p>Jornadas de bienestar corporativo donde el arte se convierte en una herramienta de mindfulness. Perfectas para reducir el estrés y recargar energías entre proyectos.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CÓMO FUNCIONA -->
+    <section id="como-funciona" class="section section-dark fade-in-up">
+      <div class="container">
+        <div class="section-header container-center mb-large">
+          <p class="eyebrow" style="color:var(--accent-color)">El Proceso</p>
+          <h2>Así de sencillo</h2>
+        </div>
+        <div class="pasos-grid">
+          <div class="paso">
+            <div class="paso-numero">01</div>
+            <h3>Contáctanos</h3>
+            <p>Cuéntanos qué necesitáis: tamaño del grupo, fecha, si es presencial u online, y cualquier detalle que tengáis en mente.</p>
+          </div>
+          <div class="paso-divider"></div>
+          <div class="paso">
+            <div class="paso-numero">02</div>
+            <h3>Diseñamos juntos</h3>
+            <p>Preparamos una propuesta a medida con el formato, los materiales, la dinámica y el presupuesto adaptados a vuestro equipo.</p>
+          </div>
+          <div class="paso-divider"></div>
+          <div class="paso">
+            <div class="paso-numero">03</div>
+            <h3>Vivís la experiencia</h3>
+            <p>El día del taller, Inés guía a todo el equipo paso a paso. Cada persona se lleva su obra a casa. El equipo se lleva algo más difícil de olvidar.</p>
+          </div>
+        </div>
+        <div style="text-align:center;margin-top:56px">
+          <a href="contacto.html" class="btn btn-outline-light">Solicitar Presupuesto Sin Compromiso</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALERÍA -->
+    <section class="section fade-in-up">
+      <div class="container">
+        <div class="section-header container-center mb-large">
+          <p class="eyebrow">Galería</p>
+          <h2>Momentos de nuestros talleres</h2>
+        </div>
+        <div class="eventos-carousel" style="max-width:900px;margin:0 auto">
+          <div class="eventos-track" id="eventos-track">
+            <img src="assets/eventos0.jpg" alt="Taller corporativo de arte">
+            <img src="assets/eventos1.jpg" alt="Team building artístico">
+            <img src="assets/eventos2.jpg" alt="Evento de empresa con arte">
+            <img src="assets/eventos3.jpg" alt="Taller corporativo Madrid">
+            <img src="assets/eventos4.jpg" alt="Team building creativo">
+            <img src="assets/eventos5.jpg" alt="Evento corporativo Barcelona">
+            <img src="assets/eventos6.jpg" alt="Taller de arte para empresas">
+            <img src="assets/eventos7.jpg" alt="Experiencia artística empresa">
+            <img src="assets/eventos8.jpg" alt="Taller team building">
+            <img src="assets/eventos9.jpg" alt="Arte y empresa">
+            <img src="assets/eventos10.jpg" alt="Taller corporativo">
+            <img src="assets/eventos11.jpg" alt="Team building Madrid">
+            <img src="assets/eventos12.jpg" alt="Evento creativo empresa">
+            <img src="assets/eventos13.jpg" alt="Taller artístico equipo">
+            <img src="assets/eventos14.jpg" alt="Experiencia corporativa arte">
+            <img src="assets/eventos15.jpg" alt="Taller de texturas empresa">
+            <img src="assets/eventos16.jpg" alt="Team building Barcelona">
+          </div>
+          <button class="eventos-btn eventos-prev" onclick="moverEventos(-1)">&#10094;</button>
+          <button class="eventos-btn eventos-next" onclick="moverEventos(1)">&#10095;</button>
+          <div class="eventos-dots" id="eventos-dots"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="section section-dark fade-in-up">
+      <div class="container container-center">
+        <p class="eyebrow" style="color:var(--accent-color)">¿Empezamos?</p>
+        <h2>Diseña una experiencia<br>para tu equipo</h2>
+        <p style="opacity:0.75;margin-bottom:36px">Sin compromiso. Cuéntanos qué necesitáis y preparamos una propuesta personalizada en menos de 24 horas.</p>
+        <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap">
+          <a href="https://wa.me/34616679621" class="btn btn-outline-light" target="_blank">💬 WhatsApp</a>
+          <a href="contacto.html" class="btn btn-outline-light">✉️ Formulario de Contacto</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <h2>Inés Barros</h2>
+        <p>"El arte empieza cuando lo intentas"</p>
+      </div>
+      <div class="footer-links">
+        <h3>Navegación</h3>
+        <a href="artista.html" class="social-link">La Artista</a>
+        <a href="experiencias.html" class="social-link">Experiencias</a>
+        <a href="colecciones.html" class="social-link">Colecciones</a>
+        <a href="empresas.html" class="social-link">Para Empresas</a>
+        <a href="kit.html" class="social-link">Art To-Go</a>
+      </div>
+      <div class="footer-links">
+        <h3>Contacto</h3>
+        <a href="https://www.instagram.com/inesbarros.art" class="social-link" target="_blank">Instagram</a>
+        <a href="https://wa.me/34616679621" class="social-link" target="_blank">WhatsApp</a>
+        <a href="mailto:ibarros.art@gmail.com" class="social-link">Email</a>
+        <a href="https://www.linkedin.com/in/inesbarrosvazquez/" class="social-link" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Inés Barros Art. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
