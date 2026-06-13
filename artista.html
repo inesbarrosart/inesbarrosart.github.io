@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Artista | Inés Barros Art</title>
+  <meta name="description" content="Conoce a Inés Barros, artista visual especializada en arte abstracto y texturas en Madrid y Barcelona.">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="loader" id="loader"><div class="spinner"></div></div>
+  <nav class="navbar" id="navbar">
+    <a href="index.html" class="logo">Inés Barros</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="artista.html" onclick="closeMenu()" class="nav-active">La Artista</a></li>
+      <li><a href="experiencias.html" onclick="closeMenu()">Experiencias</a></li>
+      <li><a href="colecciones.html" onclick="closeMenu()">Colecciones</a></li>
+      <li><a href="kit.html" onclick="closeMenu()">Art To-Go</a></li>
+      <li><a href="contacto.html" onclick="closeMenu()">Contacto</a></li>
+    </ul>
+    <div class="menu-toggle" id="menuToggle" onclick="toggleMenu()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+  </nav>
+
+  <main class="page-main">
+
+    <section class="page-hero">
+      <div class="container container-center">
+        <p class="eyebrow">La Artista</p>
+        <h1>Déjate llevar<br>por las Texturas</h1>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container about-container">
+        <div class="about-text">
+          <p class="eyebrow">Quién soy</p>
+          <h2>Hola, soy Inés Barros</h2>
+          <p>Soy artista visual especializada en arte abstracto y texturas en Madrid y Barcelona. Trabajo con acrílico y minerales naturales para crear obras que transmiten calma, movimiento y emoción.</p>
+          <p>Imparto talleres creativos para particulares y empresas desde hace varios años, y he trabajado con equipos de todos los tamaños que buscan experiencias diferentes. Mi misión es simple: ayudarte a descubrir que el arte no depende de la técnica, sino de la valentía de crear.</p>
+          <p style="font-family:var(--font-heading);font-size:1.2rem;font-style:italic;color:var(--accent-color);margin-top:24px">"El arte empieza cuando lo intentas"</p>
+        </div>
+        <div class="about-image">
+          <img src="assets/ibv.jpg" alt="Inés Barros, artista visual" style="width:100%;max-height:560px;object-fit:cover;border-radius:4px;">
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt fade-in-up">
+      <div class="container">
+        <div class="section-header container-center mb-large">
+          <p class="eyebrow">Mi trabajo</p>
+          <h2>Arte abstracto inspirado<br>en la naturaleza</h2>
+          <p>Cada obra nace de la observación del mar, la arena, la luz mediterránea y los elementos naturales. Uso minerales, gesso y acrílico para crear texturas que invitan a tocar y a sentir.</p>
+        </div>
+        <div class="about-container">
+          <div class="about-image">
+            <img src="assets/tierrafirme.jpg" alt="Obra de Inés Barros" style="width:100%;height:420px;object-fit:cover;border-radius:4px;">
+          </div>
+          <div class="about-text">
+            <p class="eyebrow">Materiales</p>
+            <h2>Texturas que<br>se sienten</h2>
+            <p>Trabajo principalmente con acrílico, gesso, minerales naturales y espátula. Cada capa añade profundidad y cada textura cuenta una historia diferente.</p>
+            <ul class="workshop-list" style="margin-top:20px">
+              <li>✔️ Acrílico y minerales naturales</li>
+              <li>✔️ Gesso y pasta de modelar</li>
+              <li>✔️ Técnica de espátula y texturizado</li>
+              <li>✔️ Lienzo de alta calidad</li>
+            </ul>
+            <a href="colecciones.html" class="btn btn-primary" style="margin-top:28px">Ver Colecciones</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section fade-in-up">
+      <div class="container container-center">
+        <p class="eyebrow">¿Conectamos?</p>
+        <h2>Sígueme en Instagram</h2>
+        <p style="color:var(--text-secondary);margin-bottom:32px">Comparto el proceso creativo, obras nuevas y momentos de los talleres.</p>
+        <a href="https://www.instagram.com/inesbarros.art" target="_blank" class="btn btn-primary">@inesbarros.art</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <h2>Inés Barros</h2>
+        <p>"El arte empieza cuando lo intentas"</p>
+      </div>
+      <div class="footer-links">
+        <h3>Navegación</h3>
+        <a href="artista.html" class="social-link">La Artista</a>
+        <a href="experiencias.html" class="social-link">Experiencias</a>
+        <a href="colecciones.html" class="social-link">Colecciones</a>
+        <a href="empresas.html" class="social-link">Para Empresas</a>
+        <a href="kit.html" class="social-link">Art To-Go</a>
+      </div>
+      <div class="footer-links">
+        <h3>Contacto</h3>
+        <a href="https://www.instagram.com/inesbarros.art" class="social-link" target="_blank">Instagram</a>
+        <a href="https://wa.me/34616679621" class="social-link" target="_blank">WhatsApp</a>
+        <a href="mailto:ibarros.art@gmail.com" class="social-link">Email</a>
+        <a href="https://www.linkedin.com/in/inesbarrosvazquez/" class="social-link" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Inés Barros Art. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

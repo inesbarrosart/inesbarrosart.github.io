@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kit de Texturas Art To-Go | Inés Barros Art</title>
+  <meta name="description" content="Kit de arte para crear tu propia obra en casa. Incluye materiales profesionales y guía online. Envío a toda España. El regalo perfecto para amantes del arte.">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="loader" id="loader"><div class="spinner"></div></div>
+  <nav class="navbar" id="navbar">
+    <a href="index.html" class="logo">Inés Barros</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="artista.html" onclick="closeMenu()">La Artista</a></li>
+      <li><a href="experiencias.html" onclick="closeMenu()">Experiencias</a></li>
+      <li><a href="colecciones.html" onclick="closeMenu()">Colecciones</a></li>
+      <li><a href="kit.html" onclick="closeMenu()" class="nav-active">Art To-Go</a></li>
+      <li><a href="contacto.html" onclick="closeMenu()">Contacto</a></li>
+    </ul>
+    <div class="menu-toggle" id="menuToggle" onclick="toggleMenu()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+  </nav>
+
+  <main class="page-main">
+
+    <section class="page-hero">
+      <div class="container container-center">
+        <p class="eyebrow">Art To-Go</p>
+        <h1>Kit de Texturas<br>Art To-Go</h1>
+        <p>Todo lo que necesitas para crear tu propia obra en casa. El regalo perfecto para amantes del arte y la creatividad.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container kit-container">
+        <div class="kit-info">
+          <p class="eyebrow">Qué incluye</p>
+          <h2>Crea tu obra<br>desde casa</h2>
+          <p>¿Quieres crear tu propia obra y enmarcarla en casa? Este kit tiene todo lo que necesitas con la paleta de colores lista para ti. Sin experiencia previa necesaria.</p>
+          <ul class="kit-contenido">
+            <li>🖌️ Bote de Gesso</li>
+            <li>🪨 Minerales para textura</li>
+            <li>🎨 Espátula, 2 brochas y esponja</li>
+            <li>🖼️ Marco efecto roble/abedul (15×18 cm)</li>
+            <li>🎨 Paleta de acrílicos (tonos morados, azul y dorado)</li>
+            <li>📱 Guía online con QR paso a paso</li>
+          </ul>
+          <div style="margin-top:32px">
+            <p style="font-size:2rem;font-family:var(--font-heading);margin-bottom:6px">55€</p>
+            <p style="color:var(--text-secondary);font-size:0.9rem;margin-bottom:24px">Envío a toda España incluido</p>
+            <a href="https://wa.me/34616679621" class="btn btn-primary" target="_blank">Pedir mi Kit</a>
+          </div>
+        </div>
+        <div class="kit-img">
+          <img src="assets/kit.jpg" alt="Kit de Texturas Art To-Go de Inés Barros">
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark fade-in-up">
+      <div class="container container-center">
+        <p class="eyebrow" style="color:var(--accent-color)">¿Para quién es?</p>
+        <h2>El regalo perfecto</h2>
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:30px;margin-top:48px;text-align:center">
+          <div>
+            <div style="font-size:2rem;margin-bottom:12px">🎁</div>
+            <h3 style="font-size:1.1rem;margin-bottom:8px">Como regalo</h3>
+            <p style="opacity:0.65;font-size:0.9rem">Para alguien que quiere descubrir el arte sin presión</p>
+          </div>
+          <div>
+            <div style="font-size:2rem;margin-bottom:12px">🏠</div>
+            <h3 style="font-size:1.1rem;margin-bottom:8px">Para crear en casa</h3>
+            <p style="opacity:0.65;font-size:0.9rem">Una tarde diferente con resultado real para colgar</p>
+          </div>
+          <div>
+            <div style="font-size:2rem;margin-bottom:12px">💻</div>
+            <h3 style="font-size:1.1rem;margin-bottom:8px">Webinars de empresa</h3>
+            <p style="opacity:0.65;font-size:0.9rem">Perfecto para equipos en remoto que quieren crear juntos</p>
+          </div>
+        </div>
+        <a href="https://wa.me/34616679621" class="btn btn-outline-light" style="margin-top:48px" target="_blank">Pedir mi Kit — 55€</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <h2>Inés Barros</h2>
+        <p>"El arte empieza cuando lo intentas"</p>
+      </div>
+      <div class="footer-links">
+        <h3>Navegación</h3>
+        <a href="artista.html" class="social-link">La Artista</a>
+        <a href="experiencias.html" class="social-link">Experiencias</a>
+        <a href="colecciones.html" class="social-link">Colecciones</a>
+        <a href="empresas.html" class="social-link">Para Empresas</a>
+        <a href="kit.html" class="social-link">Art To-Go</a>
+      </div>
+      <div class="footer-links">
+        <h3>Contacto</h3>
+        <a href="https://www.instagram.com/inesbarros.art" class="social-link" target="_blank">Instagram</a>
+        <a href="https://wa.me/34616679621" class="social-link" target="_blank">WhatsApp</a>
+        <a href="mailto:ibarros.art@gmail.com" class="social-link">Email</a>
+        <a href="https://www.linkedin.com/in/inesbarrosvazquez/" class="social-link" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Inés Barros Art. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

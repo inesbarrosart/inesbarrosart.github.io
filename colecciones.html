@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colecciones y Obras | Inés Barros Art</title>
+  <meta name="description" content="Obras abstractas personalizadas de Inés Barros. Arte abstracto en acrílico y minerales. Grandes formatos y obras mini. Madrid y Barcelona.">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="loader" id="loader"><div class="spinner"></div></div>
+  <nav class="navbar" id="navbar">
+    <a href="index.html" class="logo">Inés Barros</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="artista.html" onclick="closeMenu()">La Artista</a></li>
+      <li><a href="experiencias.html" onclick="closeMenu()">Experiencias</a></li>
+      <li><a href="colecciones.html" onclick="closeMenu()" class="nav-active">Colecciones</a></li>
+      <li><a href="kit.html" onclick="closeMenu()">Art To-Go</a></li>
+      <li><a href="contacto.html" onclick="closeMenu()">Contacto</a></li>
+    </ul>
+    <div class="menu-toggle" id="menuToggle" onclick="toggleMenu()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+  </nav>
+
+  <main class="page-main">
+
+    <section class="page-hero">
+      <div class="container container-center">
+        <p class="eyebrow">Colecciones</p>
+        <h1>Obras Personalizadas</h1>
+        <p>Arte abstracto inspirado en el mar, la arena y la luz mediterránea. Cada pieza se adapta a tus medidas y espacio.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="collection-block">
+          <div class="collection-info">
+            <p class="eyebrow">Colección</p>
+            <h3>Grandes Formatos</h3>
+            <p>Obras por encargo inspiradas en el océano, la arcilla y el viento. Colecciones "Océano" y "Arenas de Sal". Cada pieza se adapta a tus medidas y tu espacio.</p>
+            <a href="https://wa.me/34616679621" class="btn btn-primary" style="margin-top:24px" target="_blank">Consultar Disponibilidad</a>
+          </div>
+          <div class="carousel-container">
+            <div class="carousel-track" id="carousel1">
+              <div class="carousel-item" onclick="openModal('assets/tripticoresplandor.jpg','Colección Océano','Resplandor Tríptico','Obra en tríptico inspirada en el reflejo del sol sobre el agua.')">
+                <img src="assets/tripticoresplandor.jpg" alt="Resplandor Tríptico">
+                <div class="gallery-overlay"><h4>Resplandor Tríptico</h4></div>
+              </div>
+              <div class="carousel-item" onclick="openModal('assets/atardecer.jpg','Colección Océano','Atardecer','Los últimos rayos del sol sobre el horizonte marino.')">
+                <img src="assets/atardecer.jpg" alt="Atardecer">
+                <div class="gallery-overlay"><h4>Atardecer</h4></div>
+              </div>
+              <div class="carousel-item" onclick="openModal('assets/ciclos.jpg','Colección Océano','Ciclos','El eterno movimiento del agua y las mareas.')">
+                <img src="assets/ciclos.jpg" alt="Ciclos">
+                <div class="gallery-overlay"><h4>Ciclos</h4></div>
+              </div>
+              <div class="carousel-item" onclick="openModal('assets/cavalleria.jpg','Colección Océano','Cavallería','Fuerza y movimiento en tonos azul y arena.')">
+                <img src="assets/cavalleria.jpg" alt="Cavallería">
+                <div class="gallery-overlay"><h4>Cavallería</h4></div>
+              </div>
+              <div class="carousel-item" onclick="openModal('assets/bosqueencantado.jpg','Colección Naturaleza','Bosque Encantado','Texturas que evocan la profundidad del bosque.')">
+                <img src="assets/bosqueencantado.jpg" alt="Bosque Encantado">
+                <div class="gallery-overlay"><h4>Bosque Encantado</h4></div>
+              </div>
+              <div class="carousel-item" onclick="openModal('assets/costademalaga.jpg','Colección Mediterráneo','Costa de Málaga','La calidez del sur en texturas de arena y cal.')">
+                <img src="assets/costademalaga.jpg" alt="Costa de Málaga">
+                <div class="gallery-overlay"><h4>Costa de Málaga</h4></div>
+              </div>
+              <div class="carousel-item" onclick="openModal('assets/dipticoresplandor.jpg','Colección Océano','Resplandor Díptico','Díptico en tonos dorados y arena.')">
+                <img src="assets/dipticoresplandor.jpg" alt="Resplandor Díptico">
+                <div class="gallery-overlay"><h4>Resplandor Díptico</h4></div>
+              </div>
+              <div class="carousel-item" onclick="openModal('assets/cadiz.jpg','Colección Mediterráneo','Bahía de Cádiz','La luz única de la bahía gaditana.')">
+                <img src="assets/cadiz.jpg" alt="Bahía de Cádiz">
+                <div class="gallery-overlay"><h4>Bahía de Cádiz</h4></div>
+              </div>
+              <div class="carousel-item" onclick="openModal('assets/tierrafirme.jpg','Colección Arenas de Sal','Tierra Firme','Texturas de tierra y mineral en tonos neutros.')">
+                <img src="assets/tierrafirme.jpg" alt="Tierra Firme">
+                <div class="gallery-overlay"><h4>Tierra Firme</h4></div>
+              </div>
+              <div class="carousel-item" onclick="openModal('assets/soltar.jpg','Colección Arenas de Sal','Soltar','La ligereza de dejar ir en tonos arena y blanco.')">
+                <img src="assets/soltar.jpg" alt="Soltar">
+                <div class="gallery-overlay"><h4>Soltar</h4></div>
+              </div>
+              <div class="carousel-item" onclick="openModal('assets/suspirodeotono.jpg','Colección Naturaleza','Suspiro de Otoño','La melancolía del otoño en texturas cálidas.')">
+                <img src="assets/suspirodeotono.jpg" alt="Suspiro de Otoño">
+                <div class="gallery-overlay"><h4>Suspiro de Otoño</h4></div>
+              </div>
+              <div class="carousel-item" onclick="openModal('assets/arenasdesal.jpg','Colección Arenas de Sal','Arenas de Sal','Minerales y sal sobre fondo blanco roto.')">
+                <img src="assets/arenasdesal.jpg" alt="Arenas de Sal">
+                <div class="gallery-overlay"><h4>Arenas de Sal</h4></div>
+              </div>
+            </div>
+            <button class="carousel-btn carousel-prev" onclick="scrollCarousel('carousel1', -1)">&#10094;</button>
+            <button class="carousel-btn carousel-next" onclick="scrollCarousel('carousel1', 1)">&#10095;</button>
+          </div>
+        </div>
+
+        <div class="collection-block collection-block-reverse" style="margin-top:80px">
+          <div class="collection-info">
+            <p class="eyebrow">Colección</p>
+            <h3>Obras Minis</h3>
+            <p>Formatos pequeños (aprox. 27×23 cm) ideales para crear composiciones únicas en "Dúo Minis". Tonos inspirados en la calma del mar y la arena.</p>
+            <a href="https://wa.me/34616679621" class="btn btn-primary" style="margin-top:24px" target="_blank">Consultar Disponibilidad</a>
+          </div>
+          <div class="carousel-container">
+            <div class="carousel-track" id="carousel2">
+              <div class="carousel-item" onclick="openModal('assets/horizontedesal.jpg','Obras Minis','Horizonte de Sal','Mini obra en tonos arena y azul.')">
+                <img src="assets/horizontedesal.jpg" alt="Horizonte de Sal">
+                <div class="gallery-overlay"><h4>Horizonte de Sal</h4></div>
+              </div>
+              <div class="carousel-item" onclick="openModal('assets/oleaje.jpg','Obras Minis','Oleaje','El movimiento del mar en pequeño formato.')">
+                <img src="assets/oleaje.jpg" alt="Oleaje">
+                <div class="gallery-overlay"><h4>Oleaje</h4></div>
+              </div>
+              <div class="carousel-item" onclick="openModal('assets/profundidadmini.jpg','Obras Minis','Profundidad','Azules profundos en textura mineral.')">
+                <img src="assets/profundidadmini.jpg" alt="Profundidad">
+                <div class="gallery-overlay"><h4>Profundidad</h4></div>
+              </div>
+              <div class="carousel-item" onclick="openModal('assets/mareasmini.jpg','Obras Minis','Mareas','El vaivén de las mareas en pequeño formato.')">
+                <img src="assets/mareasmini.jpg" alt="Mareas">
+                <div class="gallery-overlay"><h4>Mareas</h4></div>
+              </div>
+              <div class="carousel-item" onclick="openModal('assets/reflejosdecalma.jpg','Obras Minis','Reflejos de Calma','Tonos suaves para espacios tranquilos.')">
+                <img src="assets/reflejosdecalma.jpg" alt="Reflejos de Calma">
+                <div class="gallery-overlay"><h4>Reflejos de Calma</h4></div>
+              </div>
+              <div class="carousel-item" onclick="openModal('assets/atardecermini.jpg','Obras Minis','Atardecer','Mini versión del atardecer marino.')">
+                <img src="assets/atardecermini.jpg" alt="Atardecer Mini">
+                <div class="gallery-overlay"><h4>Atardecer</h4></div>
+              </div>
+              <div class="carousel-item" onclick="openModal('assets/duominis1.jpg','Obras Minis','Dúo Minis I','Primera pieza del dúo en tonos neutros.')">
+                <img src="assets/duominis1.jpg" alt="Dúo Minis I">
+                <div class="gallery-overlay"><h4>Dúo Minis I</h4></div>
+              </div>
+              <div class="carousel-item" onclick="openModal('assets/duominis2.jpg','Obras Minis','Dúo Minis II','Segunda pieza del dúo en tonos neutros.')">
+                <img src="assets/duominis2.jpg" alt="Dúo Minis II">
+                <div class="gallery-overlay"><h4>Dúo Minis II</h4></div>
+              </div>
+            </div>
+            <button class="carousel-btn carousel-prev" onclick="scrollCarousel('carousel2', -1)">&#10094;</button>
+            <button class="carousel-btn carousel-next" onclick="scrollCarousel('carousel2', 1)">&#10095;</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- MODAL -->
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <span class="close-modal" onclick="closeModal()">&times;</span>
+      <div class="modal-body">
+        <div class="modal-img-container"><img id="modalImg" src="" alt="Obra en detalle"></div>
+        <div class="modal-info">
+          <p id="modalCollection" style="font-size:0.72rem;letter-spacing:2px;text-transform:uppercase;opacity:0.5;margin-bottom:10px"></p>
+          <h2 id="modalTitle" style="font-size:1.9rem;margin-bottom:14px"></h2>
+          <p id="modalDesc" style="color:var(--text-secondary);margin-bottom:28px"></p>
+          <a href="https://wa.me/34616679621" class="btn btn-primary" target="_blank">Consultar Disponibilidad</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <h2>Inés Barros</h2>
+        <p>"El arte empieza cuando lo intentas"</p>
+      </div>
+      <div class="footer-links">
+        <h3>Navegación</h3>
+        <a href="artista.html" class="social-link">La Artista</a>
+        <a href="experiencias.html" class="social-link">Experiencias</a>
+        <a href="colecciones.html" class="social-link">Colecciones</a>
+        <a href="empresas.html" class="social-link">Para Empresas</a>
+        <a href="kit.html" class="social-link">Art To-Go</a>
+      </div>
+      <div class="footer-links">
+        <h3>Contacto</h3>
+        <a href="https://www.instagram.com/inesbarros.art" class="social-link" target="_blank">Instagram</a>
+        <a href="https://wa.me/34616679621" class="social-link" target="_blank">WhatsApp</a>
+        <a href="mailto:ibarros.art@gmail.com" class="social-link">Email</a>
+        <a href="https://www.linkedin.com/in/inesbarrosvazquez/" class="social-link" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Inés Barros Art. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

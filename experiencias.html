@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Experiencias y Talleres de Arte | Inés Barros Art — Madrid y Barcelona</title>
+  <meta name="description" content="Talleres de arte y vino en Madrid y Barcelona. Sin experiencia previa. Aprende técnicas de textura y acrílico y llévate tu obra a casa.">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="loader" id="loader"><div class="spinner"></div></div>
+  <nav class="navbar" id="navbar">
+    <a href="index.html" class="logo">Inés Barros</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="artista.html" onclick="closeMenu()">La Artista</a></li>
+      <li><a href="experiencias.html" onclick="closeMenu()" class="nav-active">Experiencias</a></li>
+      <li><a href="colecciones.html" onclick="closeMenu()">Colecciones</a></li>
+      <li><a href="kit.html" onclick="closeMenu()">Art To-Go</a></li>
+      <li><a href="contacto.html" onclick="closeMenu()">Contacto</a></li>
+    </ul>
+    <div class="menu-toggle" id="menuToggle" onclick="toggleMenu()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+  </nav>
+
+  <main class="page-main">
+
+    <section class="page-hero">
+      <div class="container container-center">
+        <p class="eyebrow">Experiencias</p>
+        <h1>Una Experiencia de<br>Arte y Desconexión</h1>
+        <p>Taller de arte y vino en Madrid y Barcelona. Sin experiencia previa necesaria. Dos horas para crear, desconectar y llevarte a casa tu propia obra.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container about-container">
+        <div class="about-text">
+          <p class="eyebrow">El Taller</p>
+          <h2>Taller de Textura<br>y Vino</h2>
+          <p>Una experiencia de dos horas donde aprenderás técnicas de pintura y texturizado con acrílico y minerales. Inés te guía paso a paso y te ayuda a crear tu propia obra en lienzo para llevarte a casa.</p>
+          <p>No necesitas ningún tipo de experiencia previa. Solo ganas de crear y desconectar.</p>
+          <ul class="workshop-list" style="margin-top:20px">
+            <li>✔️ Taller de 2 horas en espacio íntimo</li>
+            <li>✔️ Te llevas 1 obra en lienzo a casa</li>
+            <li>✔️ Aperitivo y copa de vino incluidos</li>
+            <li>✔️ Todos los materiales incluidos</li>
+            <li>✔️ Guía de materiales y comunidad de artistas</li>
+            <li>✔️ Sin experiencia previa necesaria</li>
+          </ul>
+          <div style="display:flex;gap:14px;flex-wrap:wrap;margin-top:28px">
+            <a href="https://wa.me/34616679621" class="btn btn-primary" target="_blank">Reservar mi Plaza — 70€</a>
+            <a href="contacto.html" class="btn btn-outline">Más Información</a>
+          </div>
+        </div>
+        <div class="about-image">
+          <div class="video-gallery">
+            <video controls poster="assets/postertaller1.jpg">
+              <source src="assets/taller1.mp4" type="video/mp4">
+            </video>
+            <video controls poster="assets/postertaller2.jpg">
+              <source src="assets/taller2.mp4" type="video/mp4">
+            </video>
+            <video controls poster="assets/postertaller3.jpg">
+              <source src="assets/taller3.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark fade-in-up">
+      <div class="container container-center">
+        <p class="eyebrow" style="color:var(--accent-color)">Dónde</p>
+        <h2>Madrid y Barcelona</h2>
+        <p style="opacity:0.75;margin-bottom:40px">Los talleres se celebran en espacios íntimos y con encanto en Madrid y Barcelona. Consulta las próximas fechas disponibles por WhatsApp.</p>
+        <a href="https://wa.me/34616679621" class="btn btn-outline-light" target="_blank">Ver Próximas Fechas</a>
+      </div>
+    </section>
+
+    <section class="section section-alt fade-in-up">
+      <div class="container container-center">
+        <p class="eyebrow">¿Tienes una empresa?</p>
+        <h2>También hacemos talleres<br>para equipos</h2>
+        <p style="color:var(--text-secondary);margin-bottom:32px">Si buscas una actividad de team building diferente y memorable para tu empresa, tenemos una propuesta a medida para ti.</p>
+        <a href="empresas.html" class="btn btn-primary">Ver Talleres Corporativos</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <h2>Inés Barros</h2>
+        <p>"El arte empieza cuando lo intentas"</p>
+      </div>
+      <div class="footer-links">
+        <h3>Navegación</h3>
+        <a href="artista.html" class="social-link">La Artista</a>
+        <a href="experiencias.html" class="social-link">Experiencias</a>
+        <a href="colecciones.html" class="social-link">Colecciones</a>
+        <a href="empresas.html" class="social-link">Para Empresas</a>
+        <a href="kit.html" class="social-link">Art To-Go</a>
+      </div>
+      <div class="footer-links">
+        <h3>Contacto</h3>
+        <a href="https://www.instagram.com/inesbarros.art" class="social-link" target="_blank">Instagram</a>
+        <a href="https://wa.me/34616679621" class="social-link" target="_blank">WhatsApp</a>
+        <a href="mailto:ibarros.art@gmail.com" class="social-link">Email</a>
+        <a href="https://www.linkedin.com/in/inesbarrosvazquez/" class="social-link" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Inés Barros Art. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
