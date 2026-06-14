@@ -406,6 +406,9 @@ background: linear-gradient(to bottom, rgba(247,245,240,0.4), rgba(247,245,240,0
 .hero-buttons .btn {
   width: 220px;
   text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Iconos sociales más abajo en escritorio */
