@@ -257,7 +257,7 @@ background: linear-gradient(to bottom, rgba(247,245,240,0.4), rgba(247,245,240,0
 .eventos-carousel { position: relative; width: 100%; overflow: hidden; border-radius: 10px; margin-top: 2rem; }
 .eventos-carousel-mini { position: relative; width: 100%; overflow: hidden; border-radius: 8px; }
 .eventos-track { display: flex; transition: transform 0.5s ease; }
-.eventos-track img { min-width: 100%; height: 480px; object-fit: cover; display: block; }
+.eventos-track img { min-width: 100%; height: 480px; object-fit: cover; object-position: center; display: block; }
 .eventos-carousel-mini .eventos-track img { height: 360px; }
 .eventos-btn {
   position: absolute; top: 50%; transform: translateY(-50%);
