@@ -126,3 +126,25 @@ document.addEventListener('click', (e) => {
 document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape') closeModal();
 });
+function toggleDropdown() {
+  const menu = document.getElementById('dropdownMenu');
+  if (menu) menu.classList.toggle('active');
+}
+document.addEventListener('click', (e) => {
+  const dropdown = document.querySelector('.contacto-dropdown');
+  const menu = document.getElementById('dropdownMenu');
+  if (menu && dropdown && !dropdown.contains(e.target)) {
+    menu.classList.remove('active');
+  }
+});
+function toggleDropdown2() {
+  const menu = document.getElementById('dropdownMenu2');
+  if (menu) menu.classList.toggle('active');
+}
+document.addEventListener('click', (e) => {
+  const dropdown2 = document.querySelector('.contacto-dropdown:nth-of-type(2)');
+  const menu2 = document.getElementById('dropdownMenu2');
+  if (menu2 && dropdown2 && !dropdown2.contains(e.target)) {
+    menu2.classList.remove('active');
+  }
+});
