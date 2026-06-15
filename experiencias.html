@@ -54,11 +54,24 @@
             <li>✔️ Guía de materiales y comunidad de artistas</li>
             <li>✔️ Sin experiencia previa necesaria</li>
           </ul>
-          <div style="display:flex;gap:14px;flex-wrap:wrap;margin-top:28px">
-            <a href="https://wa.me/34616679621" class="btn btn-primary" target="_blank">Reservar mi Plaza — 70€</a>
-            <a href="contacto.html" class="btn btn-outline">Más Información</a>
-          </div>
-        </div>
+          <div class="contacto-dropdown">
+  <button class="btn btn-primary" onclick="toggleDropdown()">Reservar mi Plaza — 70€</button>
+  <div class="dropdown-menu" id="dropdownMenu">
+    <a href="https://wa.me/34616679621" target="_blank">💬 WhatsApp</a>
+    <a href="contacto.html">✉️ Formulario de Contacto</a>
+    <a href="https://www.instagram.com/inesbarros.art" target="_blank">📸 Instagram</a>
+    <a href="mailto:ibarros.art@gmail.com">📧 Email</a>
+  </div>
+</div>
+          <div class="contacto-dropdown">
+  <button class="btn btn-outline" onclick="toggleDropdown2()">Más Información</button>
+  <div class="dropdown-menu" id="dropdownMenu2">
+    <a href="https://wa.me/34616679621" target="_blank">💬 WhatsApp</a>
+    <a href="contacto.html">✉️ Formulario de Contacto</a>
+    <a href="https://www.instagram.com/inesbarros.art" target="_blank">📸 Instagram</a>
+    <a href="mailto:ibarros.art@gmail.com">📧 Email</a>
+  </div>
+</div>
         <div class="about-image">
           <div class="video-gallery">
             <video controls poster="assets/postertaller1.jpg">
