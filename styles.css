@@ -455,3 +455,18 @@ background: linear-gradient(to bottom, rgba(247,245,240,0.4), rgba(247,245,240,0
   transition: background 0.2s;
 }
 .dropdown-menu a:hover { background: var(--surface-alt); }
+.experiencias-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 28px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .experiencias-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}
