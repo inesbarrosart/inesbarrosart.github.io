@@ -470,3 +470,7 @@ background: linear-gradient(to bottom, rgba(247,245,240,0.4), rgba(247,245,240,0
     align-items: center;
   }
 }
+.page-main .btn {
+  min-width: 240px;
+  text-align: center;
+}
