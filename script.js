@@ -148,3 +148,21 @@ document.addEventListener('click', (e) => {
     menu2.classList.remove('active');
   }
 });
+const formContacto = document.getElementById('formContacto');
+if (formContacto) {
+  formContacto.addEventListener('submit', function(e) {
+    e.preventDefault();
+    const formData = new FormData(formContacto);
+    fetch('https://formspree.io/f/xdavwyrd', {
+      method: 'POST',
+      body: formData,
+      headers: { 'Accept': 'application/json' }
+    })
+    .then(response => {
+      window.location.href = 'https://inesbarrosart.github.io';
+    })
+    .catch(error => {
+      alert('Hubo un error al enviar el mensaje. Por favor, inténtalo de nuevo o escríbenos por WhatsApp.');
+    });
+  });
+}
