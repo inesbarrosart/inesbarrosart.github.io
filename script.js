@@ -159,8 +159,8 @@ if (formContacto) {
       headers: { 'Accept': 'application/json' }
     })
     .then(response => {
-      window.location.href = 'https://inesbarrosart.github.io';
-    })
+  window.location.href = 'https://inesbarrosart.github.io/gracias.html';
+})
     .catch(error => {
       alert('Hubo un error al enviar el mensaje. Por favor, inténtalo de nuevo o escríbenos por WhatsApp.');
     });
