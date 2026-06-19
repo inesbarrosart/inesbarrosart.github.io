@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mensaje Enviado | Inés Barros Art</title>
+  <meta name="description" content="Gracias por contactar con Inés Barros Art. Te responderemos a la brevedad.">
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="loader" id="loader"><div class="spinner"></div></div>
+
+  <nav class="navbar" id="navbar">
+    <a href="index.html" class="logo">Inés Barros</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="artista.html" onclick="closeMenu()">La Artista</a></li>
+      <li><a href="colecciones.html" onclick="closeMenu()">Colecciones</a></li>
+      <li><a href="experiencias.html" onclick="closeMenu()">Experiencias</a></li>
+      <li><a href="empresas.html" onclick="closeMenu()">Para Empresas</a></li>
+      <li><a href="contacto.html" onclick="closeMenu()">Contacto</a></li>
+    </ul>
+    <div class="menu-toggle" id="menuToggle" onclick="toggleMenu()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+  </nav>
+
+  <main class="page-main">
+    <section class="section" style="min-height:70vh;display:flex;align-items:center;">
+      <div class="container container-center">
+        <div style="font-size:3rem;margin-bottom:24px">✓</div>
+        <p class="eyebrow">Mensaje Enviado</p>
+        <h1 style="font-size:clamp(2rem,4vw,2.8rem);margin-bottom:20px">¡Gracias por escribirme!</h1>
+        <p style="color:var(--text-secondary);font-size:1.1rem;margin-bottom:40px">
+          He recibido tu mensaje correctamente y te responderé a la brevedad, normalmente en menos de 24 horas.
+          Si tu consulta es urgente, también puedes escribirme directamente por WhatsApp.
+        </p>
+        <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
+          <a href="https://wa.me/34616679621" class="btn btn-primary" target="_blank">💬 Escribir por WhatsApp</a>
+          <a href="index.html" class="btn btn-outline">Volver al Inicio</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <h2>Inés Barros</h2>
+        <p>"El arte empieza cuando lo intentas"</p>
+      </div>
+      <div class="footer-links">
+        <h3>Navegación</h3>
+        <a href="artista.html" class="social-link">La Artista</a>
+        <a href="colecciones.html" class="social-link">Colecciones</a>
+        <a href="experiencias.html" class="social-link">Experiencias</a>
+        <a href="empresas.html" class="social-link">Para Empresas</a>
+      </div>
+      <div class="footer-links">
+        <h3>Contacto</h3>
+        <a href="https://www.instagram.com/inesbarros.art" class="social-link" target="_blank">Instagram</a>
+        <a href="https://wa.me/34616679621" class="social-link" target="_blank">WhatsApp</a>
+        <a href="mailto:ibarros.art@gmail.com" class="social-link">Email</a>
+        <a href="https://www.linkedin.com/in/inesbarrosvazquez/" class="social-link" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Inés Barros Art. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
