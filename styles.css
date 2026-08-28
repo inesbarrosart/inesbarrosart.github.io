@@ -241,8 +241,9 @@ background: linear-gradient(to bottom, rgba(247,245,240,0.4), rgba(247,245,240,0
   background: var(--surface-alt); padding: 36px 32px; border-radius: 4px; transition: var(--transition);
 }
 .servicio-card:hover { transform: translateY(-3px); box-shadow: 0 10px 28px rgba(0,0,0,0.06); }
-.servicio-icon { font-size: 1.8rem; margin-bottom: 14px; display: block; }
-.servicio-card h3 { font-size: 1.3rem; margin-bottom: 10px; }
+.servicio-header { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
+.servicio-icon { font-size: 1.8rem; line-height: 1; }
+.servicio-card h3 { font-size: 1.3rem; }
 .servicio-card p { color: var(--text-secondary); font-size: 0.95rem; line-height: 1.72; }
 
 /* Pasos (empresas) */
