@@ -382,9 +382,6 @@ background: linear-gradient(to bottom, rgba(247,245,240,0.4), rgba(247,245,240,0
   .trust-divider { display: none; }
   .trust-item { width: 50%; justify-content: center; }
 
-  .video-gallery { grid-template-columns: 1fr; }
-  .video-gallery video { height: 260px; }
-
   .modal-body { flex-direction: column; }
   .modal-img-container img { height: 35vh; }
   .modal-info { padding: 28px 22px; }
