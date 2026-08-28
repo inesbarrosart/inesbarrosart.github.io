@@ -166,3 +166,20 @@ if (formContacto) {
     });
   });
 }
+document.querySelectorAll('.video-thumb').forEach(function (thumb) {
+  thumb.addEventListener('click', function () {
+    var mainVideo = document.getElementById('mainVideo');
+    var videoSrc = thumb.getAttribute('data-video');
+    var posterSrc = thumb.getAttribute('data-poster');
+
+    mainVideo.pause();
+    mainVideo.querySelector('source').src = videoSrc;
+    mainVideo.setAttribute('poster', posterSrc);
+    mainVideo.load();
+
+    document.querySelectorAll('.video-thumb').forEach(function (t) {
+      t.classList.remove('active');
+    });
+    thumb.classList.add('active');
+  });
+});
