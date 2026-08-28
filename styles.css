@@ -242,7 +242,6 @@ background: linear-gradient(to bottom, rgba(247,245,240,0.4), rgba(247,245,240,0
 }
 .servicio-card:hover { transform: translateY(-3px); box-shadow: 0 10px 28px rgba(0,0,0,0.06); }
 .servicio-header { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
-.servicio-header { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
 .servicio-icon { font-size: 1.8rem; line-height: 1; }
 .servicio-card h3 { font-size: 1.3rem; }
 .servicio-card p { color: var(--text-secondary); font-size: 0.95rem; line-height: 1.72; }
@@ -273,10 +272,6 @@ background: linear-gradient(to bottom, rgba(247,245,240,0.4), rgba(247,245,240,0
 .eventos-dots { position: absolute; bottom: 14px; width: 100%; display: flex; justify-content: center; gap: 6px; }
 .dot { width: 7px; height: 7px; border-radius: 50%; background: rgba(255,255,255,0.42); cursor: pointer; transition: background 0.2s; }
 .dot.active { background: white; }
-
-/* Vídeos */
-.video-gallery { display: grid; grid-template-columns: repeat(3,1fr); gap: 10px; width: 100%; }
-.video-gallery video { width: 100%; height: 220px; object-fit: cover; border-radius: 8px; display: block; }
 
 /* ── CONTACTO ── */
 .contacto-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
@@ -564,7 +559,16 @@ background: linear-gradient(to bottom, rgba(247,245,240,0.4), rgba(247,245,240,0
 }
 
 .video-thumb {
+  position: relative;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  border-radius: 6px;
+  overflow: hidden;
+  aspect-ratio: 16/9;
   background: #000;
+  opacity: 0.6;
+  transition: var(--transition);
 }
 
 .video-thumb img {
